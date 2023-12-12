@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>App/Website</title>
+    <link rel="stylesheet" href="../css/style  - ouderavond.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-img">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../html/index - ouderavond.html">
+                <img src="../img/logo_codescholars.png" alt="Logo CodeScholars" class="logocodescholars"></a>
+            <a href="../html/index - ouderavond.html">CodeScholars</a>
+        </div>
+        <ul class="links">
+            <li><a href="../html/algemeen - ouderavond.html">Algemeen</a></li>
+            <li><a href="../html/Eduarte-Canvas - ouderavond.html">App/Website</a></li>
+            <li><a href="../html/Locatiegids - ouderavond.html">Locatie</a></li>
+            <li><a href="../html/opleiding-en-stage - ouderavond.html">Opleiding</a></li>
+            <li><a href="../html/Over ons - ouderavond.html">Over ons</a></li>
+        </ul>
+        <div class="toggle_btn" onclick="toggleButton()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="dropdown_menu" id="dropdown_menu">
+        <li><a href="../html/algemeen - ouderavond.html">Algemeen</a></li>
+        <li><a href="../html/Eduarte-Canvas - ouderavond.html">App/Website</a></li>
+        <li><a href="../html/Locatiegids - ouderavond.html">Locatie</a></li>
+        <li><a href="../html/opleiding-en-stage - ouderavond.html">Opleiding</a></li>
+        <li><a href="../html/Over ons - ouderavond.html">Over ons</a></li>
+    </div>
+
+    <main>
+        <div class="sections">
+            <section class="background-section">
+                <header>
+                    <h1 class="htmltitle">App/Website</h1>
+                </header>
+                <div class="navhtml">
+                    <a href="#een">
+                        <header>
+                            <h2 class="hugenav">Eduarte</h2>
+                        </header>
+                    </a>
+                    <a href="#twee">
+                        <header>
+                            <h2 class="hugenav">Canvas</h2>
+                        </header>
+                    </a>
+                    <a href="#drie">
+                        <header>
+                            <h2 class="hugenavtwee">Kalender</h2>
+                        </header>
+                    </a>
+                    <a href="#vier">
+                        <header>
+                            <h2 class="hugenavtwee">Cursussen</h2>
+                        </header>
+                    </a>
+                    <a href="#vijf">
+                        <header>
+                            <h2 class="hugenavtwee">Inleveren van Opdrachten</h2>
+                        </header>
+                    </a>
+                    <a href="#zes">
+                        <header>
+                            <h2 class="hugenavtwee">Cijfers</h2>
+                        </header>
+                    </a>
+                </div>
+            </section>
+            <section id="een" class="scroll-top">
+                <div class="section">
+                    <header>
+                        <h2 class="titleb">Eduarte</h2>
+                    </header>
+                    <a href="https://tcr-student.educus.nl/?1" target="_blank">
+                        <img src="../IMG/eudrate.jpg" alt="Eduarte" class="bigpic">
+                    </a>
+                </div>
+            </section>
+            <section id="twee" class="scroll-top">
+                <div class="section">
+                    <header>
+                        <h2 class="titleb">Canvas</h2>
+                    </header>
+                    <p class="center">
+                        In canvas kunt u ook wijzigingen zien.
+                    </p>
+                    <a href="https://flexedu.instructure.com/" target="_blank">
+                        <img src="../img/canvas.jpg" alt="Canvas" class="bigpic">
+                    </a>
+                    <h3 id="drie" class="titled titleline space scroll-top">Kalender</h3>
+                    <a href="https://flexedu.instructure.com/" target="_blank">
+                        <img src="../img/kalender.jpg" alt="Kalender" class="bigpic">
+                    </a>
+                    <h3 id="vier" class="titled titleline space scroll-top">Cursussen</h3>
+                    <p class="center">
+                        Cursussen zijn te vinden in het tab cursussen.
+                    </p>
+                    <video src="../img/Cursussen.mp4" class="bigpic" muted loop controls autoplay></video>
+                    <header>
+                        <h2 id="vijf" class="titled titleline space scroll-top">Inleveren van Opdrachten</h2>
+                    </header>
+                    <p>
+                        Tijdens de opleiding SOD CMT dient de student naast projecten ook weekopdrachten in te
+                        leveren.
+                        Deze
+                        opdrachten worden via Canvas ingediend. In de meeste gevallen is het mogelijk om een
+                        opdracht te
+                        herzien als de student niet tevreden is met het resultaat, of wanneer de docent aangeeft dat
+                        er
+                        nog
+                        verbeteringen mogelijk zijn. Hoewel de meeste van deze opdrachten niet meetellen voor het
+                        uiteindelijke eindcijfer van het vak, geldt dit voor een aantal specifieke opdrachten juist
+                        wel.
+                    </p>
+                    <header>
+                        <h2 id="zes" class="titled titleline scroll-top">Cijfers</h2>
+                    </header>
+                    <p>
+                        Cijfers kan je vinden in Cavas, klik als u in dashboard zit het desbetreffende vak aan en dan
+                        kan je
+                        aan de linker kan Cijfers zien. Klik daar op en dan kunt u de cijfers zien.
+                    </p>
+                    <div class="space titleba">
+                        <p>Voorbeeld:</p>
+                    </div>
+                    <video src="../img/cijfers.mp4" class="bigpic" muted loop controls autoplay></video>
+                </div>
+            </section>
+        </div>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </main>
+    <footer class="footer">
+        <p>
+            Copyrighted
+        </p>
+    </footer>
+    <script src="../js/app - ouderavond.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+nav {
+    background-color: #131c27;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    flex-wrap: wrap;
+}
+nav li a {
+    color: white;
+    font-size: 25px;
+    margin-right: 130px;
+}
+nav .travelly {
+    font-family: Pattaya;
+    font-size: 30px;
+    left: 0;
+    margin-left: 80px;
+    color: white;
+}
+.ul {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.landingpage {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../img/landing-page.jpg");
+    background-repeat: none;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.landingpage h1 {
+    font-size: 40px;
+    margin-bottom: 45px;
+}
+.landingpage p {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 42px;
+}
+button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover {
+    background-color: #27394e;
+    transition: 1s;
+}
+.landingpage button {
+    background-color: #4c6e97;
+    color: white;
+    height: 8vh;
+    width: 12vw;
+}
+.landingpage button p {
+    margin-top: 40px;
+    font-size: 15px;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+}
+.newyorkpage {
+    background-image: url(../img/new-york-page.png);
+    background-repeat: none;
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.newyorkpage header {
+    border-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    width: 24vw;
+    margin-left: 60px;
+}
+.newyorkpage h2 {
+    font-size: 45px; 
+    font-weight: 500;
+}
+.newyorkpage p {
+    font-size: 25px; 
+    font-weight: 500;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+.newyork {
+    background-image: linear-gradient(gray, white);
+}
+.section {
+    min-height: 100vh;
+}
+.sectionhead {
+    background-color: #131c27;
+    color: white;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sectionhead h2 {
+    font-size: 40px;
+}
+.sectionhead p {
+    font-size: 25px;
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 1px rgb(210, 210, 210);
+    min-width: 25vw;
+    min-height: 55vh;
+    overflow: hidden;
+}
+.mini {
+    width: 3vw;
+    height: auto;
+    background-color: #131c27;
+    padding: 40px 188px 20px 188px;
+}
+.column h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.column p {
+    text-align: center;
+    width: 21vw;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.contactmountain {
+    background-image: url(../img/contact-mountain.png);
+    background-repeat: none;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contact {
+    background: rgba(19, 28, 39, 0.8);
+    width: 45vw;
+    height: 55vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+label {
+    margin-right: 30px;
+}
+input {
+    width: 13vw;
+    height: 4vh;
+}
+.space {
+    margin-bottom: 45px;
+}
+.contact button{
+    background-color: #4c6e97;
+    width: 100%;
+    height: 5vh;
+    padding: 25px 0 25px 0;
+    color: white;
+    margin-top: 140px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+footer {
+    min-height: 10vh;
+    background-color: #131c27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    bottom: 0;
+}
+footer .travelly {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    left: 0;
+    margin-left: 80px;
+    color: white;
+}
+.spaceright {
+    margin-right: 400px;
+}
+.lessspace {
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 660px) {
+    nav .travelly {
+        margin-left: 170px;
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    nav li a {
+        font-size: 15px;
+        margin-right: 50px;
+    }
+    .ul {
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
+    .landingpage {
+        background-position-x: 225vw;
+    }
+    .landingpage h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .landingpage p {
+        font-size: 20px;
+        width: 80vw;
+    }
+    .landingpage button {
+        width: 40vw;
+        height: 7vh;
+    }
+    .landingpage button p {
+        font-size: 15px;
+    }
+    .section {
+        height: 230vh;
+    }
+    .row {
+        flex-direction: column;
+        margin-top: 600px;
+    }
+    .mini {
+        padding: 20px 132px 20px 132px;
+        width: 13vw;
+    }
+    .column {
+        margin-bottom: 100px;
+        width: 80vw;
+    }
+    .column p {
+        text-align: center;
+        font-size: 18px;
+        width: 75vw;  
+        margin-left: 12px;
+    }
+    .sectionhead {
+        height: auto;
+    }
+    .sectionhead h2 { 
+        flex-wrap: wrap;
+        font-size: 32px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .sectionhead p {
+        font-size: 20px;
+        width: 80vw;
+        padding-bottom: 40px;
+    }
+    .newyorkpage header {
+        margin-left: 20px;
+        width: 270px;
+    }
+    .newyorkpage h2 {
+        font-size: 34px; 
+        font-weight: 500;
+        width: 70vw;
+    }
+    .newyorkpage p {
+        font-size: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .contact {
+        width: 80vw;
+        height: 45vh;
+    }
+    .contact h2 {
+        font-size: 35px;
+    }
+    .contact button{
+        margin-top: 80px;
+    }
+    input {
+        width: 40vw;
+    }
+    footer .travelly {
+        margin-left: 120px;
+    }
+    .spaceright {
+        margin-right: 100px;
+    }
+}
