@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethereal</title>
+    <link rel="shortcut icon" href="../img/ethereal logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,10 @@
 <body>
     <div class="homepage__bg">
         <nav class="nav">
+            <div class="nav__logo_name">
+                <img src="../img/ethereal logo.png" alt="Ethereal logo" class="nav__logo_name__img">
+                <span class="nav__logo_name__span">Ethereal</span>
+            </div>
             <ul class="nav__list">
                 <li class="nav__list__item">
                     <button class="nav__list__item">
@@ -30,6 +35,11 @@
                 <li class="nav__list__item">
                     <button class="nav__list__item">
                         <a href="../html/index.html#vaardigheden" class="nav__list__item">Vaardigheden</a>
+                    </button>
+                </li>
+                <li class="nav__list__item">
+                    <button class="nav__list__item">
+                        <a href="../html/index.html#kennis" class="nav__list__item">Kennis</a>
                     </button>
                 </li>
                 <li class="nav__list__item">
@@ -54,7 +64,6 @@
     <section class="homepage__section_two" id="projects">
         <div class="homepage__section_two__left">
             <h2 class="homepage__section_two__left__title">Projects</h2>
-            <span class="homepage__section_two__left__sorting">gesorteerd: nieuw naar oud</span>
             <ol class="homepage__section_two__left__list">
                 <li class="homepage__section_two__left__list__item">
                     <a href="../html/index-gamewebsite.html" class="homepage__section_two__left__list__item"
@@ -65,7 +74,12 @@
                         target="_blank">Traverly</a>
                 </li>
                 <li class="homepage__section_two__left__list__item">
-                    <a href="../html/index - ouderavond.html" class="homepage__section_two__left__list__item" target="_blank">Ouderavond Website</a>
+                    <a href="../html/index - ouderavond.html" class="homepage__section_two__left__list__item"
+                        target="_blank">Ouderavond Website</a>
+                </li>
+                <li class="homepage__section_two__left__list__item">
+                    <a href="../html/index - restaurant.html" class="homepage__section_two__left__list__item"
+                        target="_blank">Savorful Horizon</a>
                 </li>
             </ol>
         </div>
@@ -76,43 +90,93 @@
         <div class="homepage__section_three__right">
             <h2 class="homepage__section_three__left__title">Vaardigheden</h2>
             <ol class="homepage__section_three__left__list">
-                <li class="homepage__section_three__left__list__item">
+                <li class="homepage__section_three__left__list__item">...
                 </li>
-                <li class="homepage__section_three__left__list__item">
+                <li class="homepage__section_three__left__list__item">...
                 </li>
-                <li class="homepage__section_three__left__list__item">
+                <li class="homepage__section_three__left__list__item">...
                 </li>
             </ol>
         </div>
     </section>
-    <section class="homepage__section_four" id="contact">
-        <h2 class="homepage__section_four__title">Contact</h2>
-        <div class="homepage__section_four__gegevens">
-            <div class="homepage__section_four__gegevens__list">
-                <i class="fa-solid fa-envelope"></i>
-                <span class="homepage__section_four__gegevens__list_item">E-mail: 
-                    <span class="homepage__section_four__gegevens__list__item__link">toonvanberkel203@gamil.com</span></span><br>
-                <i class="fa-solid fa-phone"></i>
-                <span class="homepage__section_four__gegevens__list_item">Telefoonnummer:
-                    <span class="homepage__section_four__gegevens__list__item__link">06 22821395</span></span>
+    <section class="homepage__section_four" id="kennis">
+        <h2 class="homepage__section_four__title">Skills</h2>
+        <div class="homepage__section_four__kennis">
+            <div class="homepage__section_four__kennis__card">
+                <h3 class="homepage__section_four__kennis__title_list">Programeer talen</h3>
+                <ol class="homepage__section_four__kennis__list">
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>HTML</span> <i class="fa-brands fa-html5"></i>
+                    </li>
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>CSS</span> <i class="fa-brands fa-css3-alt"></i>
+                    </li>
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>Javascript (JS)</span> <i class="fa-brands fa-js"></i>
+                    </li>
+                </ol>
             </div>
-            <a href="https://github.com/ToonvanBerkel" class="homepage__section_four__gegevens__list" target="_blank">
+            <div class="homepage__section_four__kennis__card">
+                <h3 class="homepage__section_four__kennis__title_list">...</h3>
+                <ol class="homepage__section_four__kennis__list">
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>...</span>
+                    </li>
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>...</span>
+                    </li>
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>...</span>
+                    </li>
+                </ol>
+            </div>
+            <div class="homepage__section_four__kennis__card">
+                <h3 class="homepage__section_four__kennis__title_list">...</h3>
+                <ol class="homepage__section_four__kennis__list">
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>...</span>
+                    </li>
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>...</span>
+                    </li>
+                    <li class="homepage__section_four__kennis__list__item">
+                        <span>...</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="homepage__section_contact" id="contact">
+        <h2 class="homepage__section_contact__title">Contact</h2>
+        <div class="homepage__section_contact__gegevens">
+            <div class="homepage__section_contact__gegevens__list">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="homepage__section_contact__gegevens__list_item">E-mail:
+                    <span
+                        class="homepage__section_contact__gegevens__list__item__link">toonvanberkel203@gamil.com</span></span><br>
+                <i class="fa-solid fa-phone"></i>
+                <span class="homepage__section_contact__gegevens__list_item">Telefoonnummer:
+                    <span class="homepage__section_contact__gegevens__list__item__link">06 22821395</span></span>
+            </div>
+            <a href="https://github.com/ToonvanBerkel" class="homepage__section_contact__gegevens__list"
+                target="_blank">
                 <i class="fa-brands fa-github"></i>
-                Github: <span class="homepage__section_four__gegevens__list__link">Toon van Berkel</span>
+                Github: <span class="homepage__section_contact__gegevens__list__link">Toon van Berkel</span>
             </a>
             <a href="https://www.linkedin.com/in/toon-van-berkel-a9112628b/"
-                class="homepage__section_four__gegevens__list" target="_blank">
+                class="homepage__section_contact__gegevens__list" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
-                LinkedIn: <span class="homepage__section_four__gegevens__list__link">Toon van Berkel</span>
+                LinkedIn: <span class="homepage__section_contact__gegevens__list__link">Toon van Berkel</span>
             </a>
             <a href="https://instagram.com/toon.van.berkel.public?igshid=YzAwZjE1ZTI0Zg=="
-                class="homepage__section_four__gegevens__list" target="_blank">
+                class="homepage__section_contact__gegevens__list" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
-                instagram: <span class="homepage__section_four__gegevens__list__link">Toon van Berkel</span>
+                instagram: <span class="homepage__section_contact__gegevens__list__link">Toon van Berkel</span>
             </a>
         </div>
     </section>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-2xl arrow"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-arrow-up fa-2xl arrow"></i></button>
     <script src="https://kit.fontawesome.com/61afc1475b.js" crossorigin="anonymous"></script>
     <script src="../js/app.js"></script>
 </body>
