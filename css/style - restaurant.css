@@ -225,19 +225,20 @@
   flex-direction: row;
 }
 .homepage__section_four__news__card_left {
-  width: 20vw;
-  padding: 40px;
+  width: 22vw;
+  padding: 30px;
   background-color: #373737;
 }
 .homepage__section_four__news__card_left__title {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 .homepage__section_four__news__card_left__article {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
 }
-.homepage__section_four__news__card_left__articlespan {
+.homepage__section_four__news__card_left__article__span {
   margin-bottom: 20px;
 }
 

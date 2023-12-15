@@ -235,7 +235,7 @@
         width: 100%;
         height: 100vh;
         overflow: hidden;
-
+        
         &__title {
             display: flex;
             justify-content: center;
@@ -249,19 +249,20 @@
             flex-direction: row;
 
             &__card_left {
-                width: 20vw;
-                padding: 40px;
+                width: 22vw;
+                padding: 30px;
                 background-color: #373737;
 
                 &__title {
-                    font-size: 30px;
+                    font-size: 35px;
                     margin-bottom: 20px;
                 }
                 &__article {
+                    font-size: 20px;
                     display: flex;
                     flex-direction: column;
                     
-                    &span {
+                    &__span {
                         margin-bottom: 20px;
                     }
                 }
