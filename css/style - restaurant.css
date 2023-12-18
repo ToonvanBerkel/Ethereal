@@ -303,7 +303,13 @@
      object-fit: contain;
   margin: 20px;
 }
-
+.homepage__footer__social {
+  height: 20vh;
+  background-color: #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
