@@ -4,6 +4,11 @@
   color: white;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Nav */
 .nav {
   position: absolute;
@@ -55,6 +60,7 @@
   /* section three */
   /* section four */
   /* section five */
+  /* section footer */
 }
 .homepage__bg {
   background-image: url(../img/img1.png);
@@ -284,6 +290,98 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.homepage__section_five {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.homepage__section_five__title {
+  color: black;
+  font-size: 60px;
+}
+.homepage__section_five__info {
+  width: 45vw;
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.homepage__section_five__info__extra {
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+}
+.homepage__section_five__info__extra__red {
+  color: red;
+}
+.homepage__section_five__form {
+  height: auto;
+  width: 50vw;
+  border: 1px black solid;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.homepage__section_five__form__title {
+  color: black;
+  font-size: 30px;
+  margin-top: 20px;
+  border-bottom: 1px black solid;
+  margin-bottom: 10px;
+}
+.homepage__section_five__form__title_small {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+.homepage__section_five__form__row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.homepage__section_five__form__row__label {
+  color: black;
+  font-size: 20px;
+}
+.homepage__section_five__form__row__input {
+  color: black;
+  height: 4vh;
+  width: 15vw;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 2px;
+}
+.homepage__section_five__form__label {
+  color: black;
+  font-size: 20px;
+}
+.homepage__section_five__form__input {
+  color: black;
+  width: 15vw;
+  height: 4vh;
+  font-size: 20px;
+}
+.homepage__section_five__form__input_message {
+  width: 30vw;
+  height: 15vh;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+}
+.homepage__section_five__btn {
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 20px 60px 20px 60px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background-color: red;
+}
 .homepage__footer {
   margin-top: 20px;
   width: 100%;
@@ -304,12 +402,16 @@
   margin: 20px;
 }
 .homepage__footer__social {
-  height: 20vh;
+  height: 24vh;
   background-color: #373737;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.homepage__footer__social__icon {
+  margin-left: 50px;
+}
+
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
