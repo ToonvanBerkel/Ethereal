@@ -1,0 +1,592 @@
+@font-face { /* dit is om onze speciale font toe te voegen */
+    font-family: Type Machine;
+    src: url(../font/Type\ Machine.ttf);
+}
+
+* { /* dit is voor alles de normale styling */
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'type machine', sans-serif;
+}
+
+body { /* styling voor de body zodat alles in het midden zit en onder elkaar staat */
+    background-color: #000A2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.top{ /* voor de bovenkant van de pagina */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+
+    &__logo_slogan { /* styling voor het logo en slogan */
+        width: 15vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 130px;
+    }
+    &__searchbalk { /* styling voor de searchbar */
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        right: 0;
+        width: 20vw;
+        height: 6vh;
+        margin-right: 170px;
+
+        &__input { /* styling voor het input veld van de searchbalk */
+            width: 15vw;
+            border: none;
+            padding: 10px;
+            color: black;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        &__btn { /* styling voor de knop van de searchbalk */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color: red;
+            border: none;
+            padding: 10px;
+            font-weight: 400;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.red { /* omm teksten duidelijker te maken */
+    color: red;
+    font-weight: bolder;
+}
+
+.section {  /* Dit is de section met de navigatie van de website en van de pagina */
+    width: 80vw;
+    height: 80vh;
+
+    &__nav {  /* navigatie van de website */
+        width: 79vw;
+        height: 8vh;
+        background-color: #00114C;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &__item {  /* styling voor een item in de navigatie van de website */
+            font-size: 30px;
+            margin-left: 40px;
+            border-right: 1px white solid;
+            padding-right: 20px;
+        }
+    }
+    &__card_wrapper {  /* styling zodat de kaarten naast elkaar komen te staan */
+        background-image: url(../img/bg1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        height: 70vh;
+        width: 78.9vw;
+        border-right: 2px white solid;
+        border-bottom: 2px white solid;
+
+        &__card { /* styling voor een kaart */
+            width: 16vw;
+            height: 50vh;
+            background-color: #001150;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            border: 1px white solid;
+
+            &__title { /* styling voor de title van een kaart */
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            &__p { /* styling voor de normale tekst van een kaart */
+                font-size: 17px;
+            }
+            &__list { /* styling voor een lijst van een kaart */
+                height: 45vh;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                &__item { /* styling voor de items in de lijst van een kaart */
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+
+.section_two { /* section voor de ontwerpers */
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    
+    &__card { /* kaart van een ontwerper */
+        width: 25vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__img { /* image van een ontwerper */
+            width: 20vw;
+            height: 40vh;
+            margin-bottom: 10px;
+        }
+        &__name { /* naam van een ontwerper */
+            font-size: 28px;
+        }
+    }
+}
+
+.section_info {  /* Dit is voor de section met alle info */
+    height: auto;
+    width: 73.5vw;
+    padding: 40px;
+    background-color: #001350;
+    margin-top: 100px;
+
+    &__h2 {  /* de juiste styling voor een h2 in een info section */
+        font-size: 50px;
+    }
+    &__h3 {  /* de juiste styling voor een h3 in een info section */
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    &__h4 {  /* de juiste styling voor een h4 in een info section */
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    &__h5 {  /* de juiste styling voor een h5 in een info section */
+        font-size: 25px;
+        font-style: italic;
+    }
+    &__p {  /* de juiste styling voor een p in een info section */
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    &__list { /* de juiste styling voor een lijst in een info section */
+        margin-bottom: 20px;
+
+        &__item { /* de juiste styling voor een item in een lijst in een info section */
+            font-size: 17px;
+        }
+    }
+    &__tip { /* styling voor een tip of een tekst wat moet uitstaan */
+        font-size: 17px;
+        background-color: yellow;
+        color: black;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    &__img { /* de juiste styling voor een img in een info section */
+        width: 73vw;
+        height: 50vh;
+        object-fit: contain;    
+    }
+    &__img_high { /* de juiste styling voor een lange img in een info section */
+        width: 73vw;
+        height: 80vh;
+        object-fit: contain;
+        
+        &__small { /* de juiste styling voor een kleine lange img in een info section */
+        width: 23vw;
+        height: 50vh;
+        }
+    }
+}
+
+.imginput { /* Om twee images naast elkaar te zetten */
+    display: flex;
+    flex-direction: row;
+}
+
+.code { /* Het donker grijze veld */ 
+    padding: 20px;
+    width: auto;
+    font-family: sans-serif;
+
+    &__dark_blue {  /* donker blauwen code kleur */ 
+        color: #2271a5;
+        font-family: sans-serif;
+    }
+    &__light_blue {  /* licht blauwen code kleur */ 
+        color: rgb(0, 191, 255);
+        font-family: sans-serif;
+    }
+    &__orange {  /* orange code kleur */ 
+        color: orange;
+        font-family: sans-serif;
+    }
+    &__yellow {  /* gele code kleur */ 
+        color: yellow;
+        font-family: sans-serif;
+    }
+    &__green {  /* groene code kleur */ 
+        color: green;
+        font-family: sans-serif;
+    }
+    &__light_green {  /* licht groene code kleur */  
+        color: lime;
+        font-family: sans-serif;
+    }
+    &__purple {  /* paarse code kleur */  
+        color: purple;
+        font-family: sans-serif;
+    }
+}
+
+.media__img_html_css { /* zorgt ervoor dat een img niet laten zien wordt */
+    display: none;
+}
+
+.code_field { /* achtergrond en extra styling voor het code show vak */
+    background-color: rgb(34, 34, 34);
+    width: 69vw;
+    overflow-x: hidden;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+
+.left { /* zorgt ervoor dat tekst naar rechts gaan */
+    margin-left: 50px;
+}
+
+.left2 { /* zorgt ervoor dat tekst 2x meeer naar rechts gaan dan normaal */
+    margin-left: 100px;
+}
+
+.bg2 { /* zorgt voor een speciale achtergrond */
+    background-image: url(../img/bg2.png);
+    justify-content: flex-end;
+}
+.bg4 { /* zorgt voor een speciale achtergrond */
+    background-image: url(../img/bg4\(1\).png);
+    flex-direction: column;
+}
+
+.bg3 { /* zorgt voor een speciale achtergrond */
+    background-image: url(../img/bg3.png);
+    flex-direction: column;
+}
+
+.un { /* zorgt ervoor dat er geen lijst style is */
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75vw;
+    background-color: #0011509c;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.f1 { /* speciaale font groote */
+    font-size: 23px;
+}
+
+.remove { /* speciaale styling voor de tools pagina */
+    background-color: transparent;
+    border: none;
+    margin-right: 200px;
+    height: 65vh;
+    padding: 0;
+}
+
+.big { /* maakt de font groote enorm groot */
+    font-size: 70px; 
+}
+
+.codeline::before { /* Zorgt ervoor dat er pijltjes komen zodat het als een html code lijkt */
+    content: "<";
+}
+.codeline::after { /* Zorgt ervoor dat er pijltjes komen zodat het als een html code lijkt */
+    content: ">";
+} 
+
+.bt { /* geeft extra ruimte aan de onderkant */
+    margin-bottom: 20px;
+}
+
+.mid { /* pushed een item naar het midden toe */
+    margin: 5px 0 0 150px;
+}
+
+.sh { /* speciaale list style voor een voorbeeld */
+    list-style-type: disc;
+}
+
+.e1 { /* Zorgt er voor dat je teksten of woorden duidelijker worden */
+    background-color: red;
+    font-weight: bold;
+}
+
+.e2 { /* zorgt ervoor dat bepaalde teksten zwart blijven */
+    color: black;
+}
+
+table { /* styling voor alle table */
+    width: 73.5vw;
+    margin-top: 20px;
+}
+tr { /* styling voor alle tr */
+    background-color: rgb(82, 82, 82);
+}
+
+tr:nth-child(odd) { /* styling voor oneven getallen tr */
+    background-color: rgb(97, 97, 97);
+}
+
+th { /* styling voor alle th */
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+td { /* styling voor alle td */
+    padding: 10px;
+}
+
+.notable { /* voorbeeld tabel styling */
+    width: 0;
+}
+
+.notable tr { /* voorbeeld tabel styling */
+    background-color: transparent;
+}
+
+.notable tr:nth-child(odd) { /* voorbeeld tabel styling */
+    background-color: transparent;
+}
+
+.notable th { /* voorbeeld tabel styling */
+    background-color: transparent;
+    padding: 0;
+    font-size: 0;
+}
+
+.notable td { /* voorbeeld tabel styling */
+    padding: 10px;
+}
+
+.table_example { /* voorbeeld tabel styling */
+    &__v1 { /* voorbeeld tabel styling */
+        border: 1px solid;
+    }
+    &__v2 { /* voorbeeld tabel styling */
+        width: 100%;
+    }
+    &__v3 { /* voorbeeld tabel styling */
+        border-collapse: collapse;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .imginput { /* Dit is zodat de twee images die naast elkaar stonden onder elkaar gaan staan */
+        flex-direction: column;
+    }
+
+    .code { /* dit zorgt ervoor dat de code niet onder elkaar komt te staan */
+        width: 150vw;
+    }
+
+    .code_field { /* dit is het veld waar alle show code staat */
+        overflow-x: scroll;
+    }
+
+    .noscroll { /* dit is zodat je niet kan scrollen in de code stukken */
+        overflow: hidden;
+    }
+
+    table { /* styling van de table zelf */
+        width: 85vw;
+    }
+
+    .table { /* dit is zodat de table bruikbaar is op telefoon */
+        width: 79vw;
+        overflow-y: scroll;
+    }
+
+    .media { /* dit is voor de navbar op de mobile */
+        &__img_html_css { /* dit is voor de afbeelding die verschijnt in de mobile versie */
+            margin-top: 50px;
+            margin-left: 20px;
+            display: flex;
+        }
+        &__items { /* dit is voor de navigatie links */
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .section_two { /* Dit is voor de kaarten met informatie op de homepage */
+        height: auto;
+        flex-direction: column;
+        
+        &__card { /* dit is een kaart met de foto en naam van de ontwerpers */
+            width: 80vw;
+    
+            &__img { /* de foto van de ontwerper */
+                width: 60vw;
+                height: auto;
+            }
+            &__name { /* de naam van de ontwerper */
+                font-size: 30px;
+            }
+        }
+    }
+
+    .top{ /* Dit is voor de bovenkant van de pagina */
+        flex-direction: column;
+        justify-content: center;
+    
+        &__Logo_slogan { /* dit is voor het logo met de slogan te stylen */
+            width: auto;
+            height: auto;
+            padding: 0;
+        }
+        &__searchbalk { /* dit is de gehele searchbalk */
+            margin-right: 0;
+            position: unset;
+            width: 100%;
+            height: 8vh;
+            justify-content: center;
+            align-items: center;
+    
+            &__input { /* dit is de input balk voor de searchbalk */
+                width: 40vw;
+            }
+        }
+    }
+
+    .section { /* Dit is voor de section met de nav en background */
+        height: auto;
+
+        &__nav { /* de navigatie styling */
+            flex-direction: row;
+            height: auto;
+            align-items: flex-start;
+            padding: 30px;
+            width: 70vw;
+    
+            &__item { /* styling voor de items in de navigatie */
+                border-right: 0;
+                margin-left: 30px;
+                padding: 0;
+            }
+        }
+        &__card_wrapper { /* styling zodat de kaarten onder elkaar komen te staan */
+            background-image: none;
+            border: 0;
+            flex-direction: column;
+
+            &__card { /* zorgt dat de kaarten er goed uitzien op mobile */
+                width: auto;
+                padding: 0;
+                border: 0;
+                background-color: transparent;
+                height: auto;
+                align-items: flex-start;
+
+                &__title { /* stylig voor de title in een kaart */
+                    margin: 0;
+                }
+                &__list { /* stylig voor de lijst in een kaart */
+                    height: auto;
+                    display: unset;
+    
+                    &__item { /* stylig voor een item in een lijst die in een kaart zit */
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section_info { /* Dit is voor de section met alle info */
+        height: auto;
+
+        &__h2 {  /* de juiste styling voor een h2 in een info section */
+            font-size: 35px;
+        }
+        &__h3 { /* de juiste styling voor een h3 in een info section */
+            font-size: 30px;
+        }
+        &__h4 { /* de juiste styling voor een h4 in een info section */
+            font-size: 25px;
+        }
+        &__h5 { /* de juiste styling voor een h5 in een info section */
+            font-size: 20px;
+        }
+        &__p { /* de juiste styling voor een p in een info section */
+            font-size: 18px;
+        }
+        &__img { /* de juiste styling voor een img in een info section */
+            width: 80vw;
+            height: 40vh;
+        }
+        &__img_high { /* de juiste styling voor een lange img in een info section */
+            height: auto;
+
+            &__small { /* de juiste styling voor een kleine lange img in een info section */
+                width: 60vw;
+                height: 40vh;
+            }
+        }
+    }
+
+    .un {  /* dit is zodat het op telefoon er ook goed uit ziet */
+        flex-direction: column;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bg3 { /* dit is achtergrond nummer 3 */
+        height: auto;
+    }
+
+    .bg2 { /* dit is achtergrond nummer 2 */
+        height: auto;
+    }
+
+    .remove {  /* voor het weghalen van margin */
+        margin: 0;
+    }
+
+    .syntax {  /* img styling */
+        width: 80vw;
+    }
+
+    body { /* Dit is zodat de een section niet buiten de body steekt */
+        margin-bottom: 100px;
+    }
+}
